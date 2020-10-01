@@ -1,0 +1,7 @@
+.navbar, h2, footer {
+  font-family: "Oswald"
+}
+
+.carousel-item img {
+  width: 100%;
+}

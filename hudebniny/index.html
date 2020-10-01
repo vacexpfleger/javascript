@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hudebniny Pfleger</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Hudebniny Pfleger</a>
+
+      <ul class="nav navbar-nav mr-auto">
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Kytary</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Bicí</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Klávesy</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav ml-auto">
+        <li class="navbar-item"><a class="nav-link" href="#"><span><i class="fas fa-shopping-cart"></i></span> Košík</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Možnosti</a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" onclick="lightMode()" id="lightMode" href="#">Světlý režim</a>
+            <a class="dropdown-item" onclick="darkMode()" id="darkMode" href="#">Tmavý režim</a>
+            <a class="dropdown-item" id="moudro" href="#">Moudro dne</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
+
+      <ul class="carousel-indicators">
+          <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#homepageCarousel" data-slide-to="1"></li>
+          <li data-target="#homepageCarousel" data-slide-to="2"></li>
+      </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/guitar.png" alt="kytara">
+          </div>
+          <div class="carousel-item">
+            <img src="img/drums.png" alt="bici">
+          </div>
+          <div class="carousel-item">
+            <img src="img/keyboard.png" alt="klavesy">
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#homepageCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#homepageCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+      <div class="container py-4">
+        <h2 class="text-center" id="title">SORTIMENT</h2>
+        <div class="row">
+          <div class="col-md-4 p-3">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/warlock.png" alt="warlock">
+              <div class="card-body bg-light">
+                <h4 class="card-title">BC Rich Warlock</h4>
+                <ul class="card-text">
+                  <li>drsná kytara pro drsné lidi</li>
+                  <li>plameny dodávají talent</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>19 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 p-3">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/bass.png" alt="bass">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Squier Precision Bass</h4>
+                <ul class="card-text">
+                  <li>4 struny, pro básaky tak akorát</li>
+                  <li>nevyžaduje ani snahu, natož talent</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>9 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/acguitar.png" alt="akustika">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Martin 000RS1</h4>
+                <ul class="card-text">
+                  <li>ideální pro lamače dívčích srdcí</li>
+                  <li>talent mít nemusíte, iluze dívek stačí</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>14 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/snare.png" alt="snare">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Pearl Chicago Snare</h4>
+                <ul class="card-text">
+                  <li>malý buben s velkým zvukem</li>
+                  <li>nevyžaduje talent</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>9 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3 ">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/synth.png" alt="synth">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Roland Shoulder Synth <span id="synthPopup"><i class="fas fa-exclamation-circle"></i></span></h4>
+                <ul class="card-text">
+                  <li>syntezátor s nevyužitelnou škálou zvuků</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>4 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3 ">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="img/mic.png" alt="mic">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Shure SM58</h4>
+                <ul class="card-text">
+                  <li>prostě mikrofon na zpěv, co k tomu mám říct?</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" name="button" class="btn btn-danger">Koupit</button>
+                  <h6>4 990 Kč</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer id="footer" class="page-footer font-small bg-light">
+      <div class="footer-copyright text-center py-3">©2020 Václav Pfleger, 2020</div>
+    </footer>
+
+          <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
